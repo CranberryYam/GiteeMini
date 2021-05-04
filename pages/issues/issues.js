@@ -1,11 +1,12 @@
-// pages/issues/issues.js
+import issues from '../../utils/issues'
+
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
+    issues: issues
   },
 
   /**

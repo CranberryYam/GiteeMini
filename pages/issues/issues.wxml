@@ -1,3 +1,5 @@
 <view class="container">
-  <text >Haha</text>
+    <card wx:for="{{issues}}" wx:key="index" title="{{ item.title }}">
+        {{index}}: {{item.title}}
+    </card>
 </view>

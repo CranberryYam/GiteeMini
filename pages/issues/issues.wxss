@@ -1,1 +1,4 @@
 /* pages/issues/issues.wxss */
+card {
+  margin-top: 8px;
+}

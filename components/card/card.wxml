@@ -1,0 +1,11 @@
+<view class="y-box">
+  <text class='card-repo-name'> {{ repo_name }} </text>
+  <text class='card-title'> {{ title }} </text>
+
+  <view class="x-box"> 
+    <text> {{state}} </text>
+    <text> {{time}} </text>
+    <text> {{comments}} </text>
+    <text> {{labels}} </text>
+  </view>
+</view>
