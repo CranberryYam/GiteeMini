@@ -1,11 +1,26 @@
-<view class="y-box">
-  <text class='card-repo-name'> {{ repo_name }} </text>
+<view class="y-box card">
+  <view class="x-box">
+    <image class="card-repo-avator" mode="aspectFill"></image>
+    <text class='card-repo-name'> {{ repo_name }} </text>
+  </view>
+  
   <text class='card-title'> {{ title }} </text>
 
-  <view class="x-box"> 
-    <text> {{state}} </text>
-    <text> {{time}} </text>
-    <text> {{comments}} </text>
-    <text> {{labels}} </text>
+  <view class="x-box card-foot"> 
+    <image class="card-state-icon" src="../../assets/icons/open.svg" mode="widthFix"></image>
+    <text class='card-state'> {{state}} </text>
+
+    <text class='card-time'> {{time}} </text>
+
+    <image class="card-comments-icon" src="../../assets/icons/comment.svg" mode="widthFix"></image>
+    <text class='card-comments'> {{comments}} </text>
+
+    
+    <view class='card-labels'>
+      <text class='card-label' wx:for="{{ labels }}" wx:key="index"> {{item}} </text>
+    </view>
+    <!-- <text class='card-label' wx:for="{{ labels }}" wx:key="index"> {{item}} </text> -->
   </view>
+
+ 
 </view>

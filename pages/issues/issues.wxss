@@ -1,4 +1,15 @@
 /* pages/issues/issues.wxss */
+.issues-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
 card {
   margin-top: 8px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
