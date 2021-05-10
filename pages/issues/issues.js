@@ -48,14 +48,14 @@ Page({
    * Page event handler function--Called when user drop down
    */
   onPullDownRefresh: function () {
-
+    
   },
 
   /**
    * Called when page reach bottom
    */
   onReachBottom: function () {
-
+    console.log("it's the bottom");
   },
 
   /**

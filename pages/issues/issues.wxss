@@ -6,10 +6,12 @@
   align-items: stretch;
   justify-content: space-between;
   box-sizing: border-box;
+  background-color: #F4F4F4;
 } 
+
 
 card {
   margin-top: 8px;
   margin-left: 12px;
-  margin-right: 12px;
+  margin-right: 12px; 
 }

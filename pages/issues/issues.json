@@ -1,4 +1,7 @@
 {
+  "enablePullDownRefresh": true,
+  "backgroundColor":"#F4F4F4",
+  "backgroundTextStyle": "dark",
   "usingComponents": {
     "card": "../../components/card/card"
   }
