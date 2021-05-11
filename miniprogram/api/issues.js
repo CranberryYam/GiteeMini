@@ -1,9 +1,15 @@
 const getIssues = params => {
-    // setTimeout(()=>{
-  
-    // }, 2000)
     const fakeIssues = require('../utils/fakeIssues')
-    return fakeIssues.createArraysOf(fakeIssues.issues, 20)
+    const issues = fakeIssues.createArraysOf(fakeIssues.issues, 20)
+
+    // return new Promise( (resovle, reject) => {
+    //     resovle(issues)
+    // })
+
+    const delay = require('../utils/util').delay
+    return delay(5000).then(() => issues);
+
+
   }
 
   module.exports = {

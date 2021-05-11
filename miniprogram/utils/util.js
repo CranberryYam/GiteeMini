@@ -13,6 +13,11 @@ const takeIssuesBy = (arr, max_each, memo_begin) => {
   }
 }
 
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 module.exports = {
-  takeIssuesBy
+  takeIssuesBy,
+  delay
 }

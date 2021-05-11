@@ -17,9 +17,10 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    let full_issues = issues.getIssues()
-    this.setData({ full_issues: full_issues })
-    this.updateIssues()
+    issues.getIssues().then( data => {
+      this.setData({ full_issues: data })
+      this.updateIssues()
+    })
   },
 
   /**
