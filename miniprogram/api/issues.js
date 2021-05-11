@@ -3,7 +3,7 @@ const getIssues = params => {
   
     // }, 2000)
     const fakeIssues = require('../utils/fakeIssues')
-    return fakeIssues.createArraysOf(fakeIssues.issues, 0)
+    return fakeIssues.createArraysOf(fakeIssues.issues, 20)
   }
 
   module.exports = {

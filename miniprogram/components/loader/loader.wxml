@@ -1,0 +1,8 @@
+<view class="loader">
+    <image class="loader-image" 
+           src="../../assets/gif/black-pow-peek.gif" mode="aspectFit"/>
+    <view class="loader-text">
+        {{ text }}
+    </view>  
+</view>
+    
