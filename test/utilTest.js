@@ -1,6 +1,6 @@
 let assert = require('assert')
-let fakeIssues = require('../utils/fakeIssues')
-let util = require('../utils/util')
+let fakeIssues = require('../miniprogram/utils/fakeIssues')
+let util = require('../miniprogram/utils/util')
 
 describe('takeIssuesBy', function() {
     let arr = []
