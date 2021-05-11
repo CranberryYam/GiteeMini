@@ -1,4 +1,5 @@
-import issues from '../../utils/issues'
+const issues = require('../../api/issues')
+const util = require('../../utils/util')
 
 Page({
 
@@ -6,14 +7,19 @@ Page({
    * Page initial data
    */
   data: {
-    issues: issues
+    full_issues: [],
+    memo_begin: 0,
+    issues: [],
+    hasMore: true
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    let full_issues = issues.getIssues()
+    this.setData({ full_issues: full_issues })
+    this.updateIssues()
   },
 
   /**
@@ -55,7 +61,7 @@ Page({
    * Called when page reach bottom
    */
   onReachBottom: function () {
-    console.log("it's the bottom");
+    this.updateIssues()
   },
 
   /**
@@ -63,5 +69,18 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  updateIssues: function() {
+    if(!this.data.hasMore) { return }
+
+    let {has_more, cur_arr, memo_begin} = 
+          util.takeIssuesBy(this.data.full_issues, 30, this.data.memo_begin)
+
+    this.setData({ 
+      memo_begin: memo_begin,
+      issues: cur_arr,
+      hasMore: has_more
+    })
   }
 })

@@ -1,3 +1,13 @@
+const createArraysOf = (arr, count) => {
+  let newArr = []
+  let i = 0
+  while(i < count) {
+    newArr.push(...arr)
+    i++
+  }
+  return newArr
+}
+
 const issues = [
   {
     repo_name: 'Furion',
@@ -33,4 +43,8 @@ const issues = [
   }
 ]
 
-export default issues
+
+module.exports = {
+  issues,
+  createArraysOf
+}
