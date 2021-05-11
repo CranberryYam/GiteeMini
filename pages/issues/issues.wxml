@@ -1,5 +1,5 @@
 <view class="issues-page">
-    
+    <image src="../../assets/gif/black-pow-peek.gif" mode="aspectFill"/>
     <card wx:for="{{issues}}" wx:key="index" 
         title="{{ item.title }}" labels="{{ item.labels }}"
         repo_name="{{item.repo_name}}" comments="{{item.comments}}" 
