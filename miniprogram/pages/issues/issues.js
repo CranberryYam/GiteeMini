@@ -55,7 +55,10 @@ Page({
    * Page event handler function--Called when user drop down
    */
   onPullDownRefresh: function () {
-    
+    issues.getIssues().then( data => {
+      this.setData({ memo_begin: 0, full_issues: data })
+      this.updateIssues()
+    })
   },
 
   /**
