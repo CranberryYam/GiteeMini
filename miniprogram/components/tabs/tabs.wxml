@@ -1,0 +1,4 @@
+<view class="tabs">
+  <view class="{{btn1Class}}" bindtap="tapZero">{{ titleZero }}</view>
+  <view class="{{btn2Class}}" bindtap="tapOne">{{ titleOne }}</view>
+</view>

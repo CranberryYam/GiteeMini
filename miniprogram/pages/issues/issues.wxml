@@ -1,19 +1,25 @@
-<view wx:if="{{issues.length === 0}}" class="loader-container">
-    <loader></loader>
-</view>
-    
+<view class="page">
 
+    <tabs bind:click="clickTabs" titleZero="创建的" titleOne="负责的"/>
 
-<view class="list">
-    
-    <card wx:for="{{issues}}" wx:key="index" 
-        title="{{ item.title }}" labels="{{ item.labels }}"
-        repo_name="{{item.repo_name}}" comments="{{item.comments}}" 
-        state="{{item.state}}" time="{{item.time}}"
-    >
-        {{index}}: {{item.title}}
-    </card>
-    
+    <view wx:if="{{issues.length === 0}}" class="loader-container">
+        <loader />
+    </view>
+
+    <view class="list">
+
+        <card wx:for="{{issues}}" wx:key="index" 
+            title="{{ item.title }}" labels="{{ item.labels }}"
+            repo_name="{{item.repo_name}}" comments="{{item.comments}}" 
+            state="{{item.state}}" time="{{item.time}}"
+        >
+            {{index}}: {{item.title}}
+        </card>
+
+    </view>
+
 </view>
+  
+
 
 

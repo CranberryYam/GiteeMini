@@ -86,5 +86,22 @@ Page({
       issues: cur_arr,
       hasMore: has_more
     })
+  },
+
+  clickTabs: function(e) {
+
+    this.setData({
+      full_issues: [],
+      memo_begin: 0,
+      issues: [],
+      hasMore: true
+    })
+
+    issues.getIssues().then( data => {
+      this.setData({ full_issues: data })
+      this.updateIssues()
+    })
   }
+
+  
 })

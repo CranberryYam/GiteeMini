@@ -2,8 +2,10 @@
   "enablePullDownRefresh": true,
   "backgroundColor":"#F4F4F4",
   "backgroundTextStyle": "dark",
+  "navigationBarTitleText": "Issues",
   "usingComponents": {
     "card": "../../components/card/card",
-    "loader": "../../components/loader/loader"
+    "loader": "../../components/loader/loader",
+    "tabs": "../../components/tabs/tabs"
   }
 }

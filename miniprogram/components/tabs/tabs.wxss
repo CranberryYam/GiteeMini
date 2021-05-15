@@ -1,0 +1,18 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-on {
+  color: black;
+  font-size: 16px;
+  /* font-weight: bold; */
+}
+
+.btn-off {
+  color: #999999;
+  font-size: 14px;
+  /* font-weight: bold; */
+}
