@@ -1,7 +1,20 @@
 {
   "pages":[
-    "pages/issues/issues"
+    "pages/issues/issues",
+    "pages/issue/issue"
   ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/issues/issues",
+        "text": "Issues"
+      },
+      {
+        "pagePath": "pages/issue/issue",
+        "text": "Issue"
+      }
+    ]
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",

@@ -1,0 +1,9 @@
+.name {
+    margin-top: 26px;
+    margin-left: 12px;
+    font-size: 22px;
+}
+
+towxml {
+    width: 100%;
+}
