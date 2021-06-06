@@ -1,17 +1,23 @@
 {
   "pages":[
     "pages/issues/issues",
-    "pages/issue/issue"
+    "pages/issue/issue",
+    "pages/me/me"
   ],
   "tabBar": {
+    "selectedColor": "#3D3D3D",
     "list": [
       {
         "pagePath": "pages/issues/issues",
-        "text": "Issues"
+        "text": "Home",
+        "selectedIconPath": "assets/icons/Home-on.png",
+        "iconPath": "assets/icons/Home-off.png"
       },
       {
-        "pagePath": "pages/issue/issue",
-        "text": "Issue"
+        "pagePath": "pages/me/me",
+        "text": "Me",
+        "selectedIconPath": "assets/icons/Me-on.png",
+        "iconPath": "assets/icons/Me-off.png"
       }
     ]
   },

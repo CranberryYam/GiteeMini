@@ -1,0 +1,16 @@
+<view class="page">
+
+    <view class="header">
+
+        <image class="header-image" src="../../assets/images/me-header@2x.png" 
+               mode="aspectFill" lazy-load="true"/>
+
+        <view class="header-container">
+            <image class="header-avator" src="../../assets/images/lock.png"/>
+            <view class="header-name"> Brian Vaughn </view>
+            <view class="header-username"> bvaughn </view>
+        </view>
+
+    </view>
+
+</view>
