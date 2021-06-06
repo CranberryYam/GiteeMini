@@ -1,0 +1,5 @@
+<view class="page">
+    <view class="name">{{ issue.name }}</view>
+    <towxml md="{{ issue.body }}"></towxml>
+</view>
+  

@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "Issue",
+    "usingComponents": {
+        "towxml": "../../components/towxml/towxml"
+      }
+}
