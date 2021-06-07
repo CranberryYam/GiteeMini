@@ -1,8 +1,9 @@
 {
   "pages":[
+    "pages/me/me",
     "pages/issues/issues",
-    "pages/issue/issue",
-    "pages/me/me"
+    "pages/issue/issue"
+    
   ],
   "tabBar": {
     "selectedColor": "#3D3D3D",

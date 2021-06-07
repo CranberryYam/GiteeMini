@@ -3,7 +3,7 @@
     <view class="header">
 
         <image class="header-image" src="../../assets/images/me-header@2x.png" 
-               mode="aspectFill" lazy-load="true"/>
+               mode="aspectFill" lazy-load="false"/>
 
         <view class="header-container">
             <image class="header-avator" src="../../assets/images/lock.png"/>
@@ -13,4 +13,18 @@
 
     </view>
 
+    <view class="cell-setting">
+        <image class="cell-setting-icon" src="../../assets/images/lock.png" 
+                                         mode="aspectFill" lazy-load="false"/>
+        <view class="cell-setting-title">设置1</view>    
+    </view>
+
+    <view class="cell-setting">
+        <image class="cell-setting-icon" src="../../assets/images/lock.png" 
+                                         mode="aspectFill" lazy-load="false"/>
+        <view class="cell-setting-title">设置2</view>    
+    </view>
+      
+    <view class="cell-sign"> 登陆 </view>
+      
 </view>
